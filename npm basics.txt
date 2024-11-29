@@ -1,0 +1,70 @@
+*** npm init -y --> [package.json] is created . 
+  ( note : [packagelock.json] file is not created in that time )
+
+>>> if we install a new package, the package the packege store as "dependencies"
+
+==========================================================
+
+*** if we want to install new package --> npm i [packege name]
+
+for example :-
+*** npm i lodash
+
+## npm i lodash --> [ package.json ] --> "dependencies": {
+    "lodash": "^4.17.21"
+  } && also created [ package-lock.json ] file .
+
+>>> in node_module folder all dependencie are store .
+
+===========================================================
+
+*** npm i nodemon -D --> in [ package.json ] file --> "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+
+=========================================================
+
+*** [ package.json ] file -->  "scripts": {
+    "start": "node app.js"
+  }, 
+
+>>> in terminal , npm start === node app.js
+
+=========================================================
+
+*** [ package.json ] file --> "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+
+
+>>> in terminal , npm run dev === nodemon app.js
+
+==========================================================
+
+*** in tarmenal, npm uninstall [ package name ] --> to remove the package
+
+
+the basic of packege json url :
+
+https://nodesource.com/blog/the-basics-of-package-json-in-node-js-and-npm/
+
+
+
+[Error: ENOENT: no such file or directory, open 'C:\Users\DFIT\Desktop\Node Basics\concept of node.js\1-event-loop-examples\content\first.txt'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\DFIT\\Desktop\\Node Basics\\concept of node.js\\1-event-loop-examples\\content\\first.txt'
+}
+
+
+
+
+
+
+
+
+
+
+
