@@ -1,6 +1,8 @@
 const express = require("express")
 const app = express()
-const tasks = require("./public/Routs/tasks")
+
+//* import task from router
+const tasks = require("./public/router/tasks")
 
 //* middleware
 app.use(express.json())
@@ -10,6 +12,7 @@ app.get("/hello", (req, res) => {
   res.send("Hello my name is Yusuf")
 })
 
+//* set the fixt router path .
 app.use("/api/v1/tasks", tasks)
 
 const port = 9000
